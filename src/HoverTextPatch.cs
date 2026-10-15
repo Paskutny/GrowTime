@@ -10,8 +10,7 @@ namespace GrowTime
     {
         private static void Postfix(Character __instance, ref string __result)
         {
-            // Empty result = vanilla shows no hover text for this creature, so we don't add one either.
-            if (!Plugin.Enabled.Value || string.IsNullOrEmpty(__result) || !ZNet.instance) return;
+            if (!Plugin.Enabled.Value || !ZNet.instance) return;
 
             Growup growup = __instance.GetComponent<Growup>();
             if (!growup || growup.m_growTime <= 0f) return;
@@ -35,7 +34,8 @@ namespace GrowTime
             if (Plugin.ShowPercentage.Value)
                 line += " (" + TimeFormat.Percent(elapsed, growup.m_growTime) + "%)";
 
-            __result += "\n" + line;
+            // Offspring like Lox calves have no Tameable component, so vanilla returns "" for them; start with the name then.
+            __result = string.IsNullOrEmpty(__result) ? __instance.GetHoverName() + "\n" + line : __result + "\n" + line;
         }
     }
 }
