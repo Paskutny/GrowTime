@@ -1,0 +1,9 @@
+{
+  "name": "GrowTime",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/Paskutny/GrowTime",
+  "description": "Shows how long a young animal (calf, piglet, wolf cub, hatchling, ...) still needs to grow up when you hover over it. Client-side only.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2351"
+  ]
+}

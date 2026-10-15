@@ -1,0 +1,16 @@
+# Build output
+bin/
+obj/
+dist/
+
+# Local machine paths
+Environment.props
+
+# IDEs
+.vs/
+.idea/
+.vscode/
+*.user
+
+# Never commit game or BepInEx assemblies
+*.dll

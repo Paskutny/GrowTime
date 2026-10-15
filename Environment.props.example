@@ -1,0 +1,20 @@
+<!--
+  Copy this file to "Environment.props" (git-ignored) and adjust the paths for your machine.
+  Every property is optional; the defaults are in src/GrowTime.csproj.
+-->
+<Project>
+  <PropertyGroup>
+    <!-- Valheim install folder (contains valheim_Data\Managed\assembly_valheim.dll) -->
+    <ValheimDir>C:\Program Files (x86)\Steam\steamapps\common\Valheim</ValheimDir>
+
+    <!-- BepInEx folder (contains core\BepInEx.dll). Manual install: $(ValheimDir)\BepInEx.
+         Mod manager: the profile's BepInEx folder, e.g.
+         %APPDATA%\Thunderstore Mod Manager\DataFolder\Valheim\profiles\Default\BepInEx
+         or %APPDATA%\r2modmanPlus-local\Valheim\profiles\Default\BepInEx -->
+    <BepInExDir>$(ValheimDir)\BepInEx</BepInExDir>
+
+    <!-- Optional: copy the built plugin here after every build for testing. Leave empty to disable. -->
+    <DeployDir></DeployDir>
+    <!-- <DeployDir>$(BepInExDir)\plugins\Paskutny-GrowTime</DeployDir> -->
+  </PropertyGroup>
+</Project>
