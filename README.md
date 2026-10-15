@@ -28,7 +28,7 @@ src/                     Plugin source (net462)
   HoverTextPatch.cs      Hover text postfix and grow time calculation
   Translations.cs        Loads Translations/*.txt into Valheim's Localization
   TimeFormat.cs          "12m 34s" / "1h 05m" formatting
-  Translations/          English.txt, German.txt
+  Translations/          <Language>.txt (English, German, Spanish, French, Russian, Portuguese_*)
 tests/                   Unit tests for TimeFormat (net8.0, xunit)
 thunderstore/            manifest.json, README.md, icon.png (package files)
 CHANGELOG.md             Also shipped in the package

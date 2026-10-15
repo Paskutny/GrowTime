@@ -3,6 +3,7 @@
 ## 1.0.1
 
 - German description on the mod page.
+- Spanish, French, Russian and Portuguese (European and Brazilian) translations.
 
 ## 1.0.0
 

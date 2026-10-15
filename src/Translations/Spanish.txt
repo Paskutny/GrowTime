@@ -1,0 +1,3 @@
+# GrowTime translations. File name = Valheim language name (see README). Format: key = value
+growtime_grows_in = Crece en
+growtime_soon = en cualquier momento
