@@ -30,3 +30,30 @@ Translations are plain text files in the mod folder: `Translations/<Language>.tx
 ## Links
 
 Source and issues: https://github.com/Paskutny/GrowTime
+
+---
+
+## Deutsch
+
+Schau mit dem Fadenkreuz auf ein Jungtier und sieh, wie lange es noch braucht, bis es ausgewachsen ist.
+
+```
+Ferkel ( Zahm, Glücklich )
+[E] Streicheln
+[Shift + E] Umbenennen
+Wächst in: 12m 34s (58%)
+```
+
+- Funktioniert bei allen Tieren mit Wachstumsphase: Lox-Kälber, Ferkel, Wolfswelpen, Küken, Asksvin-Junge und Tiere aus anderen Mods, die Valheims Wachstumssystem nutzen.
+- Auch auf Dedicated Servern und im Multiplayer genau. Die Zeit kommt aus dem synchronisierten Spawn-Zeitpunkt des Tiers und der Weltzeit des Servers, nicht aus einem lokalen Timer.
+- Wird in deiner Spielsprache angezeigt. Enthalten sind Deutsch und Englisch, andere Sprachen zeigen Englisch.
+- **Nur clientseitig.** Installiere die Mod einfach für dich selbst. Server und Mitspieler brauchen sie nicht, und sie verändert nichts am Spiel. Sie fügt nur eine Textzeile hinzu.
+
+### Einstellungen
+
+`BepInEx/config/paskutny.growtime.cfg` (wird beim ersten Start angelegt):
+
+| Einstellung | Standard | Beschreibung |
+|---|---|---|
+| `Enabled` | `true` | Zeile mit der Wachstumszeit anzeigen. |
+| `ShowPercentage` | `false` | Zusätzlich den Fortschritt in Prozent anzeigen. |

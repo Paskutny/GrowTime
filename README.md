@@ -6,7 +6,7 @@ A client-side Valheim mod (BepInEx) that adds a line to the hover text of young 
 Grows in: 12m 34s (58%)
 ```
 
-The player-facing description is in [thunderstore/README.md](thunderstore/README.md).
+The player-facing description is in [thunderstore/README.md](thunderstore/README.md) (also in German: [Deutsch](thunderstore/README.md#deutsch)).
 
 ## How it works
 
